@@ -1,9 +1,8 @@
 package io.github.dankoller.springrecipe.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
@@ -13,8 +12,7 @@ import javax.validation.constraints.Size;
  * This class represents a request to create a new recipe and is used for deserializing and validating the JSON
  * request body.
  */
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @SuppressWarnings("unused")
 public class RecipeRequest {
